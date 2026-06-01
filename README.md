@@ -1,59 +1,136 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Team Members
+- 2207010
+- 2207022
+- 2207024
+- 2207026
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# 📰 News Portal Management System
 
-## About Laravel
+A modern and responsive News Portal Management System developed to provide a complete platform for publishing, managing, and reading news articles online. The system includes role-based administration, news management, category management, advertisement integration, and a user-friendly public interface.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🚀 Features
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### 👨‍💼 Admin Panel
+- Secure Admin Authentication
+- Dashboard with Statistics
+- Admin Account Management
+- Role-Based Access Control (RBAC)
+- News CRUD Operations
+- Category Management
+- Advertisement Management
+- Privacy Policy & Terms Management
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 📰 News Management
+- Create, Edit, Delete, and Publish News
+- Rich Text Content Support
+- Category-Based News Organization
+- Featured News Section
+- Search News by Keywords
+- News Filtering by Categories
 
-## Learning Laravel
+### 🌐 Public Frontend
+- Responsive Homepage
+- Latest News Feed
+- Detailed News Article Pages
+- Category Browsing
+- Search Functionality
+- Advertisement Integration
+- Mobile-Friendly Design
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+### 🔒 Security Features
+- Authentication & Authorization
+- Role-Based Permissions
+- Input Validation
+- Secure Session Management
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🛠️ Technologies Used
 
-## Laravel Sponsors
+### Frontend
+- HTML5
+- CSS3
+- Bootstrap
+- JavaScript
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### Backend
+- Java Servlet (JSP)
+- JDBC
 
-### Premium Partners
+### Database
+- MySQL
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### Development Tools
+- Apache Tomcat
+- Git & GitHub
+- Jira (Scrum Project Management)
 
-## Contributing
+## 📂 Project Modules
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+1. User Authentication Module
+2. Admin Management Module
+3. News Management Module
+4. Category Management Module
+5. Advertisement Management Module
+6. Search Module
+7. Dashboard & Analytics Module
+8. Content Management Module
 
-## Code of Conduct
+## 🎯 Objectives
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- Provide a centralized platform for news publishing.
+- Allow administrators to manage content efficiently.
+- Deliver a smooth reading experience for users.
+- Support role-based management and secure access control.
+- Demonstrate database operations including CRUD, SQL, and advanced DBMS concepts.
 
-## Security Vulnerabilities
+## 📊 Database Concepts Implemented
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- CRUD Operations
+- Relational Database Design
+- Primary & Foreign Keys
+- SQL Queries
+- Joins
+- Views
+- Stored Procedures
+- Triggers
+- Transactions
+- Data Validation
 
-## License
+## 👥 Team Structure
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+| Role | Responsibility |
+|--------|---------------|
+| Scrum Master | Project Planning & Coordination |
+| Frontend Developer | User Interface Development |
+| Backend Developer | Business Logic Implementation |
+| Database Developer | Database Design & Optimization |
+
+## 🔄 Development Methodology
+
+This project follows the **Scrum Agile Methodology**:
+
+- Product Backlog Creation
+- Sprint Planning
+- Sprint Execution
+- Daily Standups
+- Sprint Review
+- Sprint Retrospective
+
+Managed using **Jira Software** and version-controlled using **GitHub**.
+
+## 📸 Future Improvements
+
+- User Registration & Login
+- News Comments System
+- Real-Time Notifications
+- AI-Based News Recommendation
+- Social Media Integration
+- Multi-Language Support
+- REST API Development
+
+## 📄 License
+
+This project is developed for academic and educational purposes.
+
+---
+
+⭐ If you found this project useful, feel free to star the repository.
