@@ -32,23 +32,22 @@
 <nav class="navbar navbar-expand-lg bk-navbar sticky-top">
     <div class="container-fluid px-3">
         <a class="navbar-brand bk-brand" href="{{ route('public.home') }}">
-            <img src="{{ asset('images/logo.png') }}" alt="ভোরের খবর লোগো"
-                 style="height:42px;width:auto;object-fit:contain;margin-right:8px;vertical-align:middle;">
-            <span class="bk-brand-text">ভোরের খবর</span>
-        </a>
-        <button class="navbar-toggler text-white border-0" type="button"
-                data-bs-toggle="collapse" data-bs-target="#mainNav">
+    <img src="{{ asset('images/logo.png') }}"
+         alt="ভোরের খবর লোগো"
+         style="height:42px; width:auto; object-fit:contain; margin-right:8px; vertical-align:middle;">
+    <span class="bk-brand-text">ভোরের খবর</span>
+</a>
+        <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
             <i class="bi bi-list fs-4"></i>
         </button>
         <div class="collapse navbar-collapse" id="mainNav">
             <ul class="navbar-nav me-auto ms-3">
                 <li class="nav-item">
-                    <a class="nav-link text-white {{ request()->routeIs('public.home') ? 'active' : '' }}"
-                       href="{{ route('public.home') }}">হোম</a>
+                    <a class="nav-link text-white {{ request()->routeIs('public.home') ? 'active' : '' }}" href="{{ route('public.home') }}">হোম</a>
                 </li>
                 @foreach($navCategories->take(6) as $cat)
                 <li class="nav-item">
-                    <a class="nav-link text-white {{ request()->is('category/'.$cat->slug) ? 'active' : '' }}"
+                    <a class="nav-link text-white {{ request()->is('category/' . $cat->slug) ? 'active' : '' }}"
                        href="{{ route('public.category.show', $cat->slug) }}">{{ $cat->name }}</a>
                 </li>
                 @endforeach
@@ -77,8 +76,9 @@
             <div class="bk-ticker-wrap flex-grow-1 overflow-hidden">
                 <div class="bk-ticker-content">
                     @foreach($breakingNews as $bn)
-                    <a href="{{ route('public.news.show', $bn->slug) }}"
-                       class="text-decoration-none text-dark me-5">{{ $bn->title }}</a>
+                    <a href="{{ route('public.news.show', $bn->slug) }}" class="text-decoration-none text-dark me-5">
+                        {{ $bn->title }}
+                    </a>
                     @endforeach
                 </div>
             </div>
@@ -94,8 +94,9 @@
         <div class="d-flex align-items-center overflow-x-auto gap-1 py-1">
             @foreach($navCategories as $cat)
             <a href="{{ route('public.category.show', $cat->slug) }}"
-               class="bk-cat-link {{ request()->is('category/'.$cat->slug) ? 'active' : '' }}">
-                {{ $cat->name }}<span class="bk-cat-count">{{ $cat->news_count }}</span>
+               class="bk-cat-link {{ request()->is('category/' . $cat->slug) ? 'active' : '' }}">
+                {{ $cat->name }}
+                <span class="bk-cat-count">{{ $cat->news_count }}</span>
             </a>
             @endforeach
         </div>
@@ -125,9 +126,11 @@
                 <h6 class="text-white mb-3">বিভাগসমূহ</h6>
                 <ul class="list-unstyled">
                     @foreach($navCategories->take(6) as $cat)
-                    <li class="mb-1"><a href="{{ route('public.category.show', $cat->slug) }}"
-                        class="text-secondary text-decoration-none small bk-footer-link">
-                        <i class="bi bi-chevron-right me-1"></i>{{ $cat->name }}</a></li>
+                    <li class="mb-1">
+                        <a href="{{ route('public.category.show', $cat->slug) }}" class="text-secondary text-decoration-none small bk-footer-link">
+                            <i class="bi bi-chevron-right me-1"></i>{{ $cat->name }}
+                        </a>
+                    </li>
                     @endforeach
                 </ul>
             </div>
@@ -157,6 +160,7 @@
     </div>
 </footer>
 
+{{-- Back to Top --}}
 <button id="backToTop" class="bk-back-to-top" title="উপরে যান">
     <i class="bi bi-arrow-up"></i>
 </button>
